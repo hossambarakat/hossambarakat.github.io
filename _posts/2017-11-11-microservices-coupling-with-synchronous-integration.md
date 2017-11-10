@@ -73,14 +73,7 @@ So we managed to split the code into two separate services that could be deploye
 ### What will happen if the shipping service is not available?
 The orders service will save the order in the DB but will fail while calling the shipping and the whole purchase will fail, moreover our database will be left with data inconsistencies.
 
-#### Async/Await
-Using async/await with the above code wouldn't help because again if the "Shipping" service is not available the "Orders" service will fail.
-
-#### Retry
-Adding retry logic could help when the "Shipping" service unavailable for a short duration (seconds) but this doesn't cover long duration of downtime (minutes).
-
-
-Although the "Orders" and "Shipping" services are now hosted in two separate processes they are still coupled because the "Orders" service will not be able to serve the client request unless the "Shipping" service is available.
+So, Although the "Orders" and "Shipping" services are now hosted in two separate processes they are still coupled because the "Orders" service will not be able to serve the client request unless the "Shipping" service is available.
 
 So how could we remove the coupling?
 
