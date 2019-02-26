@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microservices and Istio Service Mesh - Sydney Alt.Net
-tags: microservices, Istio, Service Mesh
+tags: Microservices, Istio, Service Mesh
 ---
 
 Today, I have presented a talk about microservices and Istio service mesh at Sydney Alt.Net User Group.
