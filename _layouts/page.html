@@ -2,7 +2,12 @@
 layout: default
 ---
 
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
+
+<div class="post">
+  <header class="post-header">
+    <h2 class="post-title">
+        <a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a>
+    </h2>
+</header>
   {{ content }}
 </div>
