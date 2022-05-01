@@ -1,0 +1,83 @@
+---
+layout: page
+title: Talks
+array:
+  - title: Build Your Cloud Infrastructure as Code With .Net Core
+    date: 2021-11-17
+    event: Build Stuff Lithuania
+    link: http://buildstuff.events/
+  - title: Kubernetes Blue-Green Deployment Made Easy with Argo Rollouts
+    date: 2021-10-28
+    event: All Day DevOps
+    link: https://www.alldaydevops.com/
+  - title: Build Your Azure Infrastructure as Code With .Net Core
+    date: 2021-04-15
+    event: Global Azure
+    link: https://globalazure.net/
+  - title: Build Your Azure Infrastructure as Code With .NET Core
+    date: 2021-01-25
+    event: Azure Day Rome
+    link: http://www.azureday.it/
+  - title: Practical Domain Driven Design with EF Core
+    date: 2021-01-27
+    event: NDC London
+    link: https://ndc-london.com/
+  - title: Infrastructure as Code With .Net Core
+    date: 2020-11-12
+    event: All Day DevOps
+    link: https://www.alldaydevops.com/
+  - title: Practical Domain Driven Design with EF Core
+    date: 2020-10-12
+    event: NDC Sydney
+    link: https://ndcsydney.com/
+  - title: Infrastructure as Code With .Net Core
+    date: 2020-04-21
+    event: NDC Porto
+    link: https://ndcporto.com/
+  - title: Secure Your Kubernetes Containers
+    date: 2019-11-06
+    event: All Day DevOps
+    link: https://play.vidyard.com/vEfDKAhmcx1NAz4a8az1zJ?
+  - title: Empower Your Microservices with Istio Service Mesh
+    date: 2019-10-14
+    event: NDC Sydney
+    link: https://www.youtube.com/watch?v=UGPHxyncmYY
+  - title: Secure Your Kubernetes Containers
+    date: 2019-10-14
+    event: NDC Sydney
+    link: https://ndcsydney.com/
+  - title: Empower Your Microservices with Istio Service Mesh
+    date: 2019-06-18
+    event: NDC Oslo
+    link: https://youtu.be/BIrYgDHueNg
+  - title: Empower Your Microservices with Istio Service Mesh
+    date: 2019-02-22
+    event: Sydney Alt.Net User Group
+    link: https://www.meetup.com/en-AU/Sydney-Alt-Net/events/jxqsbqyzdbjc/
+  - title: Kubernetes for Developers
+    date: 2018-11-27
+    event: Sydney Alt.Net User Group
+    link: https://www.meetup.com/en-AU/Sydney-Alt-Net/events/jxqsbqyxpbkc/
+  - title: Kubernetes for .NET Developers
+    date: 2018-09-17
+    event: NDC Sydney
+    link: https://www.youtube.com/watch?v=uh4V2IjSrlI&list=PLU1WaRA-q3lXkrRUAsJ-Wxq4OPk0ieYIv&index=2
+  - title: Serverless with Azure Functions
+    date: 2017-06-15
+    event: DDD Sydney
+    link: https://www.dddsydney.com.au/agenda/2017/
+---
+
+
+{% for talk in page.array %}
+
+<div class="talk">
+  <span>
+    <a href="{{talk.link}}">{{talk.title}} @ {{talk.event}}</a>
+  </span><br/>
+  <span>{{talk.date || date_to_string}}</span>
+</div>
+
+{% endfor %}
+
+
